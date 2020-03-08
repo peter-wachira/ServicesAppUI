@@ -1,0 +1,2 @@
+rootProject.name='sample-services-app-ui'
+include ':app'
