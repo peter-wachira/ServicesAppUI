@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 28
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.petehack.sample_services_app_ui"
         minSdkVersion 17
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -24,12 +24,22 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:design:29.0.0'
-    implementation 'com.android.support:cardview-v7:29.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:appcompat-v7:28.2.0'
+    implementation 'com.android.support:design:28.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
 }
