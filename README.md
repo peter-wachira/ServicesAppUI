@@ -28,6 +28,15 @@ An sample User Interface design with a modern  and dark mode implementation.
 ```
 
 
+
+## Known Bugs
+
+- There are currently no tests done for this project
+- As at the time this project was made, testing and business logic was not a major concern 
+- The project is currently not being maintained any more. Contributions are most welcome if you would like to port the project to kotlin
+- Thanks for understanding.
+
+
 ## Contact Details and Documentation
 
 ```bash
